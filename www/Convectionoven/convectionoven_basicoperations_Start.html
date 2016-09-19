@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/convectionoven.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='convectionoven.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> CONVECTION OVEN
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='convectionoven_basicoperations.html';">HOW TO ENERGIZE THE Steam Oven</div>
+                    <div class="submenu_item active" onclick="location.href='convectionoven_basicoperations_Start.html';">How to START a program</div>
+                    <div class="submenu_item" onclick="location.href='convectionoven_basicoperations_Pause.html';">How to pause a program</div>
+                    <div class="submenu_item" onclick="location.href='convectionoven_basicoperations_Stop.html';">How to STOP a program</div>
+                    <div class="txt_contentTitle">How to START a program</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen">Make sure that the Steam Oven is in the STANDBY ON mode.</div>
+                    <div class="txt_contentStep btnDown smallIcon darkgrey"><div class="contentIconBorder"></div>If necessary, press the <div class="aw_iconClear btnDown">&nbsp;</div> button to go to the desired program.</div>
+                    <div class="screenshot ss_cooking darkgrey"></div>
+                    <div class="txt_contentStep btnPauzeStartSmall smallIcon"><div class="contentIconBorder"></div>Press the <div class="aw_iconClear btnPauzeStartSmall">&nbsp;</div> button to start the program. The display shows the remaining program time, the inside temperature and the blue colored progress bar.</div>
+                    <div class="screenshot ss_cookingTime"></div>
+                    <div class="txt_contentStep textonly darkgrey">After the end of the program, the display shows that the menu is ready.</div>
+                    <div class="screenshot ss_cookingReady darkgrey"></div>
+                    <div class="txt_contentStep btnStop extraSmallIcon"><div class="contentIconBorder"></div>Press the <div class="aw_iconClear btnStop">&nbsp;</div> button to go back to the menu selection.</div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

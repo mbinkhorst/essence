@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/scstrimodechiller.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='scstrimodechiller.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> SCS Tri-Mode Chiller
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='scstrimodechiller_basicoperations.html';">HOW TO START THE UNIT (IF NECESSARY)</div>
+                    <div class="submenu_item active" onclick="location.href='scstrimodechiller_basicoperations_Start.html';">HOW TO START A PROGRAM</div>
+                    <div class="submenu_item" onclick="location.href='scstrimodechiller_basicoperations_Stop.html';">HOW TO STOP A PROGRAM</div>
+                    <div class="txt_contentTitle">How to START a program</div>
+                    
+                    <div class="txt_contentStep aw_btnButtonModeHigh extraSmallIcon"><div class="contentIconBorder"></div>The unit operates in three (3) modes:<ul><li>Freezer 10.4°F (-12°C)</li><li>Refrigerator 39°F (4°C)</li><li>Beverage Chiller 46°F (8°C)</li></ul></div>
+                    <div class="txt_contentStep aw_btnButtonModeHigh extraSmallIcon darkgrey"><div class="contentIconBorder"></div>To select the desired mode, press the MODE button repeatedly until the desired mode (Freezer, Refrigerator or Beverage Chiller) is displayed on HMI display.</div>
+                    <div class="separator"></div>
+                    <div class="txt_contentStep aw_btnButtonModeHigh extraSmallIcon"><div class="contentIconBorder"></div>Unit mode can be changed any time.<br><br>
+                    Note: Defrost mode is initiated automatically to remove ice formation in the refrigerator and ‘Defrost’ is displayed on the HMI.<br><br>
+                    Note: The LED bar(s) ‘breathe’ (e.g. increase and decrease in intensity until the target temperature is achieved). When achieved the LED bar(s) are on continuously.</div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

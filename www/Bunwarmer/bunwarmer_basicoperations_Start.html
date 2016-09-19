@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/bunwarmer.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='bunwarmer.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> BUN WARMER
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations.html';">HOW TO ENERGIZE THE BUN WARMER</div>
+                    <div class="submenu_item active" onclick="location.href='bunwarmer_basicoperations_Start.html';">HOW TO START THE BUN WARMER</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Select.html';">HOW TO SELECT A PROGRAM<br>(HIGH, MEDIUM OR LOW)</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Stop.html';">HOW TO STOP A PROGRAM</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Open.html';">OPEN DOOR DETECTION</div>
+                    <div class="txt_contentTitle">How to START a program</div>
+                    
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue"><u>OBSERVE</u> make sure that the door is closed and the primary latch and the secondary latch are locked correctly.</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen darkgrey"><u>PRESS</u> the ON/OFF button once. The light ring of the <div class="aw_iconClear aw_btnButtonOnOffGreen">&nbsp;</div> button turns to the color Green to indicate that the Bun Warmer is in the STANDBY ON mode.</div>
+                    <div class="txt_contentStep aw_btnButtonModeHigh extraSmallIcon"><div class="contentIconBorder"></div>All three indicators <div class="aw_iconBorder aw_btnButtonModeHigh">&nbsp;</div> of the MODE button flash which indicates that the default HIGH program is started. The MODE indicator will illuminate when <div class="aw_iconBorder aw_btnButtonModeHigh">&nbsp;</div> the unit has reached its temperature.</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue darkgrey">After 60 minutes the program stops automatically. The unit goes to the STANDBY OFF mode. The indicator <div class="aw_iconBorder aw_btnButtonModeHigh">&nbsp;</div> of the MODE button goes OFF and the light ring of the <div class="aw_iconClear aw_btnButtonOnOffBlue">&nbsp;</div> button turns to the color Blue.</div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

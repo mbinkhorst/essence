@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/bunwarmer.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='bunwarmer.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> BUN WARMER
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+                <ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations.html';">HOW TO ENERGIZE THE BUN WARMER</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Start.html';">HOW TO START THE BUN WARMER</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Select.html';">HOW TO SELECT A PROGRAM<br>(HIGH, MEDIUM OR LOW)</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Stop.html';">HOW TO STOP A PROGRAM</div>
+                    <div class="submenu_item active" onclick="location.href='bunwarmer_basicoperations_Open.html';">OPEN DOOR DETECTION</div>
+
+                    <div class="txt_contentTitle">OPEN DOOR DETECTION</div>
+                    
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen">
+                    <div class="secondIcon2"><div class="contentIconBorder aw_btnButtonMode"></div></div>
+                    If the door is opened during a program, the heating of the Bun Warmer stops. The light ring of the <div class="aw_iconClear aw_btnButtonOnOffGreen">&nbsp;</div> button starts to flash. The indicators <div class="aw_iconClear aw_btnButtonMode">&nbsp;</div> of the MODE button go OFF and the timer pauses the selected program.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen darkgrey">
+                    <div class="secondIcon2"><div class="contentIconBorder aw_btnButtonMode"></div></div>
+                    Close the door to resume the program. The light ring of the <div class="aw_iconClear aw_btnButtonOnOffGreen">&nbsp;</div> button stops to flash. The indicator <div class="aw_iconClear aw_btnButtonMode">&nbsp;</div> of the MODE button illuminates and the timer pauses the selected program.
+                    <div class="extraPadding"></div>
+                    </div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

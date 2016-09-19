@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/convectionoven.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='convectionoven.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> CONVECTION OVEN
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">quick reference guide</div>
+                    <div class="separator"></div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">FROZEN MEALS</span><br>In case of deep frozen meals, use the Frozen Meals program before starting a desired program.</div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">ERROR RESET</span><br>In case of an unexpected error message, press and hold the <div class="aw_iconClear aw_btnButtonOnOffGreen">&nbsp;</div> button for 6 seconds to reset the oven.</div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">OVEN CONTENT</span>
+                        <ol>
+                        <li>Using foil/wax paper, is only allowed to use when it is heat resistant. Using material with low heat resistance can cause overheat or burning smell situations.</li>
+                        <li>To obtain the best performance, do not overload the oven. The oven is designed for a maximum load of 32 meals.</li>
+                        </ol>
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">CLEANING</span><br>Make sure that the oven cavity is checked and if necessary cleaned after each cooking program.</div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">PAUSE FUNCTION</span><br>If needed to open the door during a cooking program, press the <div class="aw_iconClear aw_btnButtonStartPause">&nbsp;</div> button before opening the door. <!-- Note: If a program is paused (also when door is opened) longer than 2 minutes, the oven goes back to the STANDBY ON mode. --></div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

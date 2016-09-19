@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/bunwarmer.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='../overview.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> BUN WARMER
+            </div>
+            <div class="separator"></div>
+            <div class="title_blue">operation manual</div>
+            <div class="btn_instructionVideos" onclick="location.href='bunwarmer_videos.html';">instruction videos</div>
+            <div class="btn_buttons" onclick="location.href='bunwarmer_buttons.html';">buttons</div>
+            <div class="btn_doorOperations" onclick="location.href='bunwarmer_dooroperations.html';">door operations</div>
+            <div class="btn_basicOperations" onclick="location.href='bunwarmer_basicoperations.html';">basic operations</div>
+            <div class="btn_quickReferenceGuide" onclick="location.href='bunwarmer_quickreferenceguide.html';">quick reference guide</div>
+            <div class="btn_cookingPrograms floatleft" onclick="location.href='bunwarmer_cookingprograms.html';">cooking programs</div>
+            <div class="btn_empty""></div>
+            <div class="separator"></div>
+            <div class="footer">(Rev. 3 November 2016)</div>
+        </div>
+    </div>
+</body>
+</html>

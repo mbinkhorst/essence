@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/trimodechiller.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='trimodechiller.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Tri-Mode Chiller
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item active" onclick="location.href='trimodechiller_basicoperations.html';">HOW TO START THE UNIT (IF NECESSARY)</div>
+                    <div class="submenu_item" onclick="location.href='trimodechiller_basicoperations_Start.html';">HOW TO START A PROGRAM</div>
+                    <div class="submenu_item" onclick="location.href='trimodechiller_basicoperations_Stop.html';">HOW TO STOP A PROGRAM</div>
+                    
+                    <div class="txt_contentTitle">HOW TO START THE UNIT<br>(IF NECESSARY)</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue"><u>OBSERVE</u> a Blue light ring indicates the unit is receiving power from the aircraft and is in the STANDBY OFF mode.</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGrey darkgrey"><u>OBSERVE</u> when the unit is not receiving power from the aircraft the light ring of the ON/OFF button is off. Check galley circuit breakers to energize the unit and wait for the Blue ring to light up.</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue"><u>PRESS</u> the ON/OFF button once, to switch from STANDBY OFF mode to ON mode</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen"><u>OBSERVE</u> <ol><li>All indicators each light up during the initialization process.</li><li>After a succesful initialization, the unit will operate in the same mode as it was saved before shut down.</li></ol></div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

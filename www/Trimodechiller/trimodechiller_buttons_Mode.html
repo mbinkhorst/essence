@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/trimodechiller.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='trimodechiller_buttons.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Tri-Mode Chiller
+            </div>
+            <div class="separator"></div>
+            <div class="content_container">
+                <div class="aw_btnIcon aw_btnButtonMode"></div>
+                <div class="txt_btnTitle">MODE</div>
+                <div class="txt_btnSubTitle">BUTTON</div>
+                <div class="txt_btnText">
+                    The MODE button allows to select the following temperature modes:<br>
+                    <br>
+                    INDICATORS
+                    <div class="aw_btnIconIndicator aw_btnButtonModeLow"></div>
+                    <div class="txt_btnIconIndicator">Beverage Chiller 46°F (8°C), 1 LED bar at bottom</div>
+                    <div class="aw_btnIconIndicator aw_btnButtonModeMedium"></div>
+                    <div class="txt_btnIconIndicator">Refrigerator 39°F (4°C), 2 LED bars from bottom to top</div>
+                    <div class="aw_btnIconIndicator aw_btnButtonModeHigh"></div>
+                    <div class="txt_btnIconIndicator">Freezer 0°F (-18°C), 3 LED bars</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

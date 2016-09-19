@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="6" id="com.michelb.beaerospace" ios-CFBundleVersion="6" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>EssenceManuals</name>
+    <description>
+        Beta Release
+    </description>
+    <author email="michel.binkhorst@xs4all.nl" href="http://www.michelbinkhorst.nl">
+        Michel Binkhorst
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <preference name="StatusBarOverlaysWebView" value="true" />
+        <splash density="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+        <splash density="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+        <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+        <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="BackupWebStorage" value="none" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="StatusBarStyle" value="blackopaque" />
+        <preference name="StatusBarBackgroundColor" value="#000000" />
+        <icon height="120" src="res/ios/icon-60@2x.png" width="120" />
+        <icon height="180" src="res/ios/icon-60@3x.png" width="180" />
+        <icon height="87" src="res/ios/icon-small@3x.png" width="87" />
+        <icon height="29" src="res/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/ios/icon-small@2x.png" width="58" />
+        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+    </platform>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="fullscreen" value="false" />
+    <preference name="orientation" value="portrait" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="true" />
+</widget>

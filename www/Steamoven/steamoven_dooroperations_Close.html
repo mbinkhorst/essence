@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/steamoven.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='steamoven_dooroperations.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> CONVECTION OVEN
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">DOOR OPERATIONS</div>
+                    <div class="subtitle">HOW TO CLOSE THE DOOR</div>
+                    <div class="separator"></div>
+                    <img src="../images/steamoven/aw_doorOperationsOpen2.jpg" alt="" class="aw_doorOperationsOpenImage">
+                    <div class="subscript">
+                        <div class="left">LH - SAFE POSITION</div>
+                        <div class="right">RH - SAFE POSITION</div>
+                    </div>
+                    <div class="txt_doorOperationsOpen">Make sure that the primary door latch is in the <div class="aw_icon safe">&nbsp;</div> SAFE position.</div>
+                    <div class="separator"></div>
+                    <img src="../images/steamoven/aw_doorOperationsOpen4.jpg" alt="" class="aw_doorOperationsOpenImage">
+                    <div class="subscript">
+                        <div class="left">LH - CLOSE POSITION</div>
+                        <div class="right">RH - CLOSE POSITION</div>
+                    </div>
+                    <div class="txt_doorOperationsOpen">Push the door against the door frame. Turn the primary door latch to the vertical LOCK position to lock the door.</div>
+                    <div class="separator"></div>
+                    <img src="../images/steamoven/aw_doorOperationsOpen1.jpg" alt="" class="aw_doorOperationsOpenImage">
+                    <div class="subscript">
+                        <div class="left">LH - CLOSE/LOCK POSITION</div>
+                        <div class="right">RH - CLOSE/LOCK POSITION</div>
+                    </div>
+                    <div class="txt_doorOperationsOpen">Slide the secondary latch to the down position to lock the door.</div>
+                    <div class="separator"></div>
+                    <div class="title_blue">WATCH THE VIDEO</div>
+                    <img class="btn_video03" alt="" src="../images/steamoven/btn_video03.jpg">
+                    <div class="separator"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

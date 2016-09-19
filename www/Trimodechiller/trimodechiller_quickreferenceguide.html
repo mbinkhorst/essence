@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/trimodechiller.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='trimodechiller.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Tri-Mode Chiller
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">quick reference guide</div>
+                    <div class="separator"></div>
+                    
+                    <div class="txt_contentStep textonly"><span class="contentTitle">CONDENSATION</span><br>
+                    To prevent condensation, the unit’s door needs to be in the LOCK position rather than in the SAFE position. The SAFE position should not be used.
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">RESET UNIT</span><br>
+                    Power can be reset by pressing and holding the ON/OFF button for at least 5 seconds rather than cycling galley panel circuit breakers.
+                    </div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">ON/OFF BUTTON SHOWS AMBER LIGHT RING</span><br>
+                    For the case that the light ring of the ON/OFF button shows Amber color, reset the unit by pressing and holding the ON/OFF button for at least 6 seconds. If after resetting the amber light does not disappear send the unit back for inspection.
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">DISPLAY ACTUAL COMPARTMENT TEMPERATURE</span><br>
+                    Press and hold the MODE button for at least 3 seconds to display the actual temperature of the chiller compartment. Press and hold again for at least 3 seconds to cancel.
+                    </div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">SYSTEM STABILIZING</span><br>
+                    The Tri-Mode Chiller cannot perform its cooling function due to an external condition (e.g. high ambient temperature).
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">TEMP WARNING</span><br>
+                    The inner cavity temperature has been above the mode temperature (e.g. too warm) for some time. Food quality may be degraded and should be checked by the flight crew.
+                    </div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">SERVICE REQUIRED</span><br>
+                    The tri-mode chiller has experienced an unrecoverable fault and should be returned for repair/rework/service.
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">OVERHEATING</span><br>
+                    To prevent overheating, the unit’s external inlet vent cannot be blocked by paper towels or cabin crew notes.
+                    </div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">SYNC LOSS</span><br>
+                    The tri-mode chiller displays this upon one of the following conditions: No software loaded, incorrect software loading switch position, bad cable assembly, or bad microprocessor PCB. Treat like SERVICE REQUIRED.
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey"><span class="contentTitle">RAPID PULL DOWN IN BEVERAGE CHILLER MODE</span><br>
+                    In Beverage Chiller Mode there is a rapid pull down phase. This phase will reset whenever the mode is changed or when power is cycled.
+                    </div>
+                    <div class="txt_contentStep textonly"><span class="contentTitle">FAN</span><br>
+                    When the unit is cooling and the door is opened, the fan will turn off. If the door is left open, the fan will automatically restart after 1 minute.
+                    </div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+.txt_secondaryLatch {
+    background-color: #abaaaa;
+    background-image: url("../images/convectionoven/aw_secondaryLatch.jpg");
+    background-repeat: no-repeat;
+    background-size: 48vw auto;
+    border-bottom: 0.25vw solid #979797;
+    color: #fff;
+    font-size: 4vw;
+    height: 45vw;
+    padding-left: 56vw;
+    padding-right: 7vw;
+    padding-top: 12vw;
+}
+.txt_primaryLatch {
+    background-color: #abaaaa;
+    background-image: url("../images/convectionoven/aw_primaryLatch.jpg");
+    background-repeat: no-repeat;
+    background-size: 48vw auto;
+    color: #fff;
+    font-size: 4vw;
+    height: 45vw;
+    padding-left: 56vw;
+    padding-right: 7vw;
+    padding-top: 9vw;
+}
+.ss_cooking {
+    background-image: url("../images/convectionoven/ss_cooking.jpg");
+}
+.ss_cookingTime {
+    background-image: url("../images/convectionoven/ss_cookingTime.jpg");
+}
+.ss_cookingReady {
+    background-image: url("../images/convectionoven/ss_cookingReady.jpg");
+}
+.ss_cookingPause {
+    background-image: url("../images/convectionoven/ss_cookingPause.jpg");
+}
+.ss_cookingStop {
+    background-image: url("../images/convectionoven/ss_cookingStop.jpg");
+}
+.ss_program {
+    background-image: url("../images/convectionoven/ss_program.jpg");
+}
+.ss_cookingprograms {
+    width: 100%;
+}

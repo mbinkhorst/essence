@@ -1,0 +1,9 @@
+1x:
+keytool -genkey -v -keystore michel.keystore -alias michel -keyalg RSA -keysize 2048 -validity 10000
+
+dan:
+cordova build --release android
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore michel.keystore platforms/android/build/outputs/apk/android-release-unsigned.apk michel
+
+zipalign -v 4 platforms/android/build/outputs/apk/android-release-unsigned.apk release.apk 

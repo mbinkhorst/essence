@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/steamoven.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='steamoven.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> STEAM OVEN
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='steamoven_basicoperations.html';">HOW TO ENERGIZE THE Steam Oven</div>
+                    <div class="submenu_item" onclick="location.href='steamoven_basicoperations_Start.html';">How to START a program</div>
+                    <div class="submenu_item active" onclick="location.href='steamoven_basicoperations_Pause.html';">How to pause a program</div>
+                    <div class="submenu_item" onclick="location.href='steamoven_basicoperations_Stop.html';">How to STOP a program</div>
+                    <div class="txt_contentTitle">How to Pause a program</div>
+                    <div class="txt_contentStep aw_btnButtonStartPause extraSmallIcon"><div class="contentIconBorder"></div>During a program, press the <div class="aw_iconClear aw_btnButtonStartPause">&nbsp;</div> button to pause the program.</div>
+                    <div class="txt_contentStep textonly">The display shows the pause icon.</div>
+                    <div class="screenshot ss_cookingPause"></div>
+                    <div class="txt_contentStep aw_btnButtonStartPause extraSmallIcon darkgrey"><div class="contentIconBorder"></div>Press the <div class="aw_iconClear aw_btnButtonStartPause">&nbsp;</div> button again to continue the program. Note: If a program is paused (also when door is opened) longer than 2 minutes, the Steam Oven goes back to the STANDBY ON mode.</div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

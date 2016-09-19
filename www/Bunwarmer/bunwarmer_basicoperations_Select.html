@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/bunwarmer.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='bunwarmer.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> BUN WARMER
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations.html';">HOW TO ENERGIZE THE BUN WARMER</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Start.html';">HOW TO START THE BUN WARMER</div>
+                    <div class="submenu_item active" onclick="location.href='bunwarmer_basicoperations_Select.html';">HOW TO SELECT A PROGRAM<br>(HIGH, MEDIUM OR LOW)</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Stop.html';">HOW TO STOP A PROGRAM</div>
+                    <div class="submenu_item" onclick="location.href='bunwarmer_basicoperations_Open.html';">OPEN DOOR DETECTION</div>
+                    <div class="txt_contentTitle">HOW TO SELECT A PROGRAM (HIGH, MEDIUM OR LOW)</div>
+                    
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen"><u>OBSERVE</u> make sure that the Bun Warmer is in the STANDBY ON mode.</div>
+
+                    <div class="txt_contentStep aw_btnButtonMode extraSmallIcon darkgrey"><div class="contentIconBorder"></div>
+                    <div class="secondIcon"><div class="contentIconBorder aw_btnButtonModeLow"></div></div>
+                    PRESS the MODE button <div class="aw_iconBorder aw_btnButtonMode">&nbsp;</div> one time to select the LOW program. The LOW indicator <div class="aw_iconBorder aw_btnButtonModeLow positionBackground">&nbsp;</div> of the button flashes until temperature is reached. Then illuminates.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonMode extraSmallIcon"><div class="contentIconBorder"></div>
+                    <div class="secondIcon"><div class="contentIconBorder aw_btnButtonModeMedium"></div></div>
+                    PRESS the MODE button <div class="aw_iconBorder aw_btnButtonMode">&nbsp;</div> again to select the MEDIUM program. The MEDIUM indicator <div class="aw_iconBorder aw_btnButtonModeMedium positionBackground">&nbsp;</div> of the button flashes until temperature is reached. Then illuminates.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonMode extraSmallIcon darkgrey"><div class="contentIconBorder"></div>
+                    <div class="secondIcon"><div class="contentIconBorder aw_btnButtonModeHigh"></div></div>
+                    PRESS the MODE button <div class="aw_iconBorder aw_btnButtonMode">&nbsp;</div> again to select the HIGH program. The HIGH indicator <div class="aw_iconBorder aw_btnButtonModeHigh positionBackground">&nbsp;</div> of the button flashes until temperature is reached. Then illuminates.
+                    </div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

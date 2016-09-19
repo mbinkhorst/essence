@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="screen overview">
+        <div class="header">
+            <img src="images/general/aw_cube.svg" alt="" class="icon_cubeBlue"><br>
+            Essence<sup>&#174;</sup> Inserts Collection<br><span class="subtext">by B/E AEROSPACE</span>
+        </div>
+        <div class="title_blue">Product overview</div>
+        <div class="subtitle">Select your product</div>
+        <div class="separator"></div>
+        <div class="productlist overthrow">
+            <ul>
+                <li onclick="location.href='Steamoven/steamoven.html';">STEAM OVEN</li>
+                <!--<li onclick="javascript:top.frames.location.reload();">CONVECTION OVEN</li>-->
+                <li onclick="location.href='Convectionoven/convectionoven.html';">CONVECTION OVEN</li>
+                <li onclick="location.href='Bunwarmer/bunwarmer.html';">BUN WARMER</li>
+                <li>ESPRESSO/CAPPUCCINO MACHINE</li>
+                <!-- <li><i>NESPRESSO</i> MACHINE</li>
+                <li>BEVERAGE MAKER</li>
+                <li>BEVERAGE CUP</li>
+                <li>WATER HEATER</li> -->
+                <li onclick="location.href='Trimodechiller/trimodechiller.html';">TRI-MODE CHILLER</li>
+                <li onclick="location.href='scsTrimodechiller/scstrimodechiller.html';">SCS TRI-MODE CHILLER</li>
+                <li>INTEGRATED GALLEY TRASH COMPACTOR</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
