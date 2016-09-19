@@ -97,8 +97,7 @@ function videoPath(element, filename) {
 
     if (window.isiOS === true) {
         //console.log('videopath ios');
-        // TODO video path vanuit root
-        var src = window.root + 'video/' + filename + '.mp4'; //AANGEPAST DOOR IA: ../ toegevoegd voor video/
+        var src = window.root + 'video/' + filename + '.mp4';
     }
 
     var element = '#' + element; //zucht
