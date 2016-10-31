@@ -1,0 +1,105 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/espressocappuccinomachine.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='ecm.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Espresso/Cappuccino Machine
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">CATERING FUNCTIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='ecm_cateringfunctions.html';">HOW TO BREW<br>ESPRESSO OR RISTRETTO</div>
+                    <div class="submenu_item" onclick="location.href='ecm_cateringfunctions_cappuccino.html';">HOW TO BREW<br>CAPPUCCINO</div>
+                    <div class="submenu_item active" onclick="location.href='ecm_cateringfunctions_frothmilk.html';">HOW TO FROTH MILK</div>
+                    
+                    <div class="txt_contentTitle">HOW TO FROTH MILK</div>
+                    <div class="txt_contentNote">This process can be used to increase frothed milk volume in a beverage, if desired.</div>
+                    <div class="yellownote">
+                        <p>THE BREW CAVITY AND FROTH MODULE SHOULD BE WIPED DOWN AFTER EVERY SERVICE TO REMOVE COFFEE AND MILK RESIDUE. THE FROTH MODULE SHOULD BE RINSED OR CLEANED, AS APPROPRIATE, PER THE INSTRUCTIONS IN SECTION 5.</p>
+                    </div>
+
+                    <div class="txt_contentStep">
+                        <div class="device">FROTH MODULE</div>
+                            <u>INSERT</u> the Froth Module (with milk) into the Espresso/Cappuccino Machine.
+                    </div>
+                    <div class="txt_contentStep darkgrey">
+                        <div class="device">RECEIVING CUP</div>
+                            <u>PLACE</u> a cup in the left receiving cup space.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonFroth smallIcon">
+                    <div class="contentIconBorder"></div>
+                        <u>OBSERVE</u> 
+                            <ol>
+                                <li>For <strong>Auto Mode:</strong> <u>PRESS</u> and <u>RELEASE</u> the FROTH button for a 20-second froth.</li>
+                                <li>For <strong>Manual Mode:</strong> <u>PRESS</u> and <u>HOLD</u> the FROTH button for frothing that continues until the FROTH button is released.</li>
+                            </ol>
+                            <strong>NOTE: Do not hold the FROTH button longer than 60 seconds.</strong>
+                    </div>
+                    <div class="txt_contentNote">
+                        NOTE: A SELECTED FUNCTION CAN BE CANCELLED BY PRESSING THE FUNCTION BUTTON AGAIN.
+                    </div>
+
+                    <div class="txt_contentTitle">FROTHING MILK WITH THE FROTH WAND</div>
+                    <div class="txt_contentStep">
+                        <div class="device">FROTH MODULE</div>
+                            <u>REMOVE</u> the Froth Module from the Espresso/Cappuccino Machine. IMPORTANT: If the Froth Module is installed, the Froth Wand will not warm or froth the milk.
+                    </div>
+                    <div class="txt_contentStep darkgrey">
+                        <div class="device">FROTHING PITCHER</div>
+                            <u>FILL</u> a frothing pitcher with up to 165 mL of milk. Using more than 165 mL of milk will cause the milk’s temperature to be cooler than desired after frothing.<br>
+                            <br>
+                            <strong>NOTE: The milk volume will approximately double during the frothing process.</strong>
+                    </div><div class="txt_contentStep">
+                        <div class="device">FROTH WAND</div>
+                            <u>INSERT</u> Froth Wand into the frothing pitcher of milk.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonFroth smallIcon darkgrey">
+                    <div class="contentIconBorder"></div>
+                        <u>OBSERVE</u> the ON/OFF light ring is Green, indicating the unit is in the STANDBY ON mode, and all indicators are steady ON.
+                            <ol>
+                                <li>For <strong>Auto Mode:</strong> <u>PRESS</u> and <u>RELEASE</u> the FROTH button for a 60-second froth.</li>
+                                <li>For <strong>Manual Mode:</strong> <u>PRESS</u> and <u>HOLD</u> the FROTH button for frothing that continues until the FROTH button is released.</li>
+                            </ol>
+                            <strong>NOTE: Do not hold the FROTH button longer than 60 seconds.</strong>
+                    </div>
+                    <div class="yellownote">MILK SHOULD BE REFRIGERATED AT ALL TIMES WHEN NOT IN USE. MILK SHOULD <strong>NOT</strong> BE STORED IN THE ESPRESSO/CAPPUCCINO MACHINE WHEN THE MILK IS NOT GOING TO BE USED IMMEDIATELY. THE FROTH MODULE MAY BE REFRIGERATED.</div>
+                    <div class="yellownote">IMPORTANT! THE FROTH WAND MUST BE RINSED OR CLEANED AFTER EACH SERVICE. DO NOT ALLOW MILK TO DRY ON THE INSIDE OR THE OUTSIDE OF THE FROTH WAND. THE FROTH WAND SHOULD BE RINSED OR CLEANED, AS APPROPRIATE, PER THE INSTRUCTIONS IN SECTION 5.
+                    </div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/espressocappuccinomachine.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='ecm.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Espresso/Cappuccino Machine
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BUTTONS</div>
+                    <div class="subtitle">FUNCTIONS AND INDICATORS</div>
+                    <div class="separator"></div>
+                    <div class="btn_left btnOnOff" onclick="location.href='ecm_buttons_OnOff.html';">on/off button</div>
+                    <div class="btn_right btnCappuccino" onclick="location.href='ecm_buttons_Cappuccino.html';">cappuccino</div>
+                    <div class="btn_left btnLeftEspresso" onclick="location.href='ecm_buttons_LeftEspresso.html';">left espresso</div>
+                    <div class="btn_right btnLeftRistretto" onclick="location.href='ecm_buttons_LeftRistretto.html';">left ristretto</div>
+                    <div class="btn_left btnRightEspresso" onclick="location.href='ecm_buttons_RightEspresso.html';">right espresso</div>
+                    <div class="btn_right btnRightRistretto" onclick="location.href='ecm_buttons_RightRistretto.html';">right ristretto</div>
+                    <div class="btn_left btnClean" onclick="location.href='ecm_buttons_Clean.html';">clean</div>
+                    <div class="btn_right btnFroth" onclick="location.href='ecm_buttons_Froth.html';">froth</div>
+                    <!-- <div class="btn_right btnPauzeStart" onclick="location.href='ecm_buttons_StartPause.html';">start/pause button</div>
+                    <div class="btn_left btnStop" onclick="location.href='ecm_buttons_Stop.html';">stop</div>
+                    <div class="btn_right btnUp" onclick="location.href='ecm_buttons_Up.html';">up</div>
+                    <div class="btn_left btnDown" onclick="location.href='ecm_buttons_Down.html';">down</div>
+                    <div class="btn_right btnClock" onclick="location.href='ecm_buttons_Clock.html';">clock</div> -->
+                    <div class="separator"></div>
+                    <div class="btn_left btnNoWater" onclick="location.href='ecm_buttons_NoWater.html';">no water</div>
+                    <div class="btn_right btnNetwork" onclick="location.href='ecm_buttons_Network.html';">network loss</div>
+                    <div class="separator"></div>
+                    <div class="btn_full btnHmiDisplay" onclick="location.href='ecm_buttons_HmiDisplay.html';">hmi display</div>
+                    <div class="separator"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/espressocappuccinomachine.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='ecm.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Espresso/Cappuccino Machine
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">quick reference guide</div>
+                    <div class="separator"></div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">All function indicators are NOT LIT</span>
+                        <p>Brew Handle is not in the ‘down’ position. Lower the Brew Handle.</p>
+                        <p>Unit is in STANDBY OFF. Press the ON/OFF button to switch to STANDBY ON.</p>
+                        <p>See also items 8, 9, and 10</p>
+                    </div>
+                    <div class="txt_contentStep textonly darkgrey">
+                        <span class="contentTitle">Right side ESPRESSO and RISTRETTO indicators are NOT LIT</span>
+                        <p>Froth Module is installed. Right side ESPRESSO and RISTRETTO functions are not available, and indicators will not be lit, when Froth Module is installed.</p>
+                    </div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">CAPPUCCINO indicator is NOT LIT</span>
+                        <p>Froth Module is not installed. Install Froth Module in unit.
+                        <p>Froth Module is not fully inserted. The locking tabs will be engaged and locked when the module is fully inserted.</p>
+                        <p>Froth Module sensor magnet may be damaged or missing.</p>
+                        <p>Repair or replace the Froth Module assembly.</p>
+                    </div>
+                     <div class="txt_contentStep textonly darkgrey">
+                        <span class="contentTitle">Function indicator is blinking</span>
+                        <p>Unit is not up to temperature. Select desired function again when indicator stops blinking.</p>
+                    </div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">Unit will not brew</span><br>
+                        <p>Brew Handle is not in the ‘down’ position. Lower the Brew Handle.</p>
+                        <p>Unit is in STANDBY OFF. Press the ON/OFF button to switch to STANDBY ON.</p>
+                        <p>See also items 8, 9, and 10</p>
+                    </div>
+                     <div class="txt_contentStep textonly darkgrey">
+                        <span class="contentTitle">Espresso or Ristretto brew volume is lower than normal</span>
+                        <p>Some air could be in the system lines after not being used for extended periods of time in the STANDBY ON mode. More volume can be added by pressing the ESPRESSO or RISTRETTO button to continue the brew until the desired volume has been reached. Press the button again to stop brewing.</p>
+                        <p>Pod Holders could be clogged with dried coffee or debris. Clean thoroughly, following the instructions in Section 5F, then try brewing again.</p>
+                    </div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">Cappuccino volume (frothed milk) is significantly higher or lower than normal with significantly more foam or no foam</span>
+                        <p>Froth Module could be clogged with dried coffee, milk, or debris. Rinse the Froth Module, following the instructions in Section 5C, or clean the Froth Module, following the instructions in Section 5G. Afterwards, try brewing again.</p>
+                    </div>
+                     <div class="txt_contentStep textonly darkgrey">
+                        <span class="contentTitle">ON/OFF indicator is AMBER</span>
+                        <p>Unit has a fault. Turn the unit off, then turn it back on. If the fault persists, return the unit for service.</p>
+                    </div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">The NO WATER indicator is LIT</span>
+                        <p>There is no water supply to unit. Check galley water supply.</p>
+                    </div>
+                     <div class="txt_contentStep textonly darkgrey">
+                        <span class="contentTitle">The NETWORK LOSS indicator is LIT</span>
+                        <p>A loss of network connection between the unit and the aircraft network controller has occurred. Unit may not operate until situation is resolved.</p>
+                    </div>
+                    <div class="txt_contentStep textonly">
+                        <span class="contentTitle">Unit does not Prime; ON/OFF indicator turns back to BLUE</span>
+                        <p>There is no water supply to unit. Check galley water supply.</p>
+                        <p>Brew Handle is not in the ‘down’ position. Lower the Brew Handle.</p>
+                    </div>
+                    
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/espressocappuccinomachine.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='ecm.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Espresso/Cappuccino Machine
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">COMPONENT REMOVAL AND DISASSEMBLY</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='ecm_crd.html';">POD HOLDER AND FROTH<br>MODULE REMOVAL</div>
+                    <div class="submenu_item active" onclick="location.href='ecm_crd_frothmoduledisassembly.html';">FROTH MODULE DISASSEMBLY</div>
+                    <div class="submenu_item" onclick="location.href='ecm_crd_frothwanddisassembly.html';">FROTH WAND DISASSEMBLY</div>
+                    
+                    <div class="txt_contentTitle">FROTH MODULE DISASSEMBLY</div>
+                    
+                    <div class="component">
+                        <div class="txt_componentTitle">FROTH MODULE</div>
+                        <div class="item">
+                            <img src="../images/espressocappuccinomachine/aw_ecm_frothmodule.svg" alt="" class="pod module">
+                        </div>
+                        The Froth Module as it is removed from the Espresso/Cappuccino Machine.
+                    </div>
+                    <div class="component">
+                        <div class="txt_componentTitle">THE FROTHING TUBE</div>
+                        <div class="item">
+                            <div class="nr ft_01">1</div>
+                            <div class="nr ft_02">A</div>
+                            <div class="nr ft_03">B</div>
+                            <div class="nr ft_04">C</div>
+                            <img src="../images/espressocappuccinomachine/aw_ecm_frothmoduleExploded_01.svg" alt="" class="frothing tube">
+                        </div>
+                        <ol>
+                            <li>The Frothing Tube is removed by pulling straight up, in order to unsnap it from its retaining clips. Care must be taken not to damage the Pickup Tube.</li>
+                        </ol>
+                        <ol class="alpha">
+                            <li>AERATOR</li>
+                            <li>GROMMET</li>
+                            <li>PICKUP TUBE</li>
+                        </ol>
+                    </div>
+                    <div class="component">
+                        <div class="txt_componentTitle">LID OF THE FROTH MODULE</div>
+                        <div class="item">
+                            <div class="nr lfm_01_1">1</div>
+                            <div class="nr lfm_01_2">1</div>
+                            <div class="nr lfm_02">A</div>
+                            <div class="nr lfm_03">B</div>
+                            <img src="../images/espressocappuccinomachine/aw_ecm_frothmoduleExploded_02.svg" alt="" class="frothing tube">
+                        </div>
+                        <ol>
+                            <li>The lid of the Froth Module is a “friction fit” into the module’s reservoir. Pull up gently to separate the lid from the reservoir.</li>
+                        </ol>
+                        <ol class="alpha">
+                            <li>LID</li>
+                            <li>RESERVOIR</li>
+                        </ol>
+                    </div>
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

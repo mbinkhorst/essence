@@ -475,6 +475,22 @@ html.android body .manual .scrolllist {
     text-transform: uppercase;
     width: 50%;
 }
+.manual .btn_empty {
+    background-color: #000;
+    background-image: none;
+    background-position: center 5vw;
+    background-repeat: no-repeat;
+    background-size: 13vw auto;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 3vw;
+    height: 30vw;
+    padding-top: 22vw;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+}
 .manual .yellownote {
     width: 100%;
     height: auto;
@@ -512,7 +528,10 @@ html.android body .manual .scrolllist {
     display: block;
     width: 100%;
 }
-
+.manual .note {
+    position: relative;
+    display: inline-block;
+}
 .aw_btnIcon {
     background-position: center center;
     background-repeat: no-repeat;
@@ -565,6 +584,9 @@ html.android body .manual .scrolllist {
     top: -11vw;
 	width: 46vw;
 }
+.txt_btnTitle.small {
+    font-size: 5.6vw;
+}
 .txt_btnSubTitle {
     font-size: 6vw;
     left: 40vw;
@@ -576,9 +598,7 @@ html.android body .manual .scrolllist {
 .txt_btnSubTitle.hmi {
     top: -9vw;
 }
-.txt_btnTitle.small {
-	font-size: 5.8vw;
-}
+
 .txt_btnTitle_extra {
     font-size: 3.8vw;
     left: 42vw;
@@ -610,6 +630,11 @@ html.android body .manual .scrolllist {
     position: relative;
     top: -15vw;
     width: 52vw;
+}
+.txt_btnIconIndicator:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 /* MANUAL 01 STEAM OVEN */
 
@@ -714,6 +739,14 @@ html.android body .manual .scrolllist {
     padding: 7vw 5vw 4vw 10vw;
     text-transform: uppercase;
 }
+.txt_contentNote {
+    background-color: #000;
+    color: #fff;
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 4vw 10vw 4vw 10vw;
+    /*text-transform: uppercase;*/
+}
 .txt_contentStep {
     background-color: #000;
     background-position: 10vw 5vw;
@@ -725,7 +758,7 @@ html.android body .manual .scrolllist {
     min-height: 24vw;
     padding: 4vw 5vw 4vw 31vw;
 }
-.txt_contentStep ol {
+.txt_contentStep ol, .txt_contentNote ol {
 	padding-left: 4vw;
 	margin-bottom: 0vw;
 }
@@ -733,37 +766,11 @@ html.android body .manual .scrolllist {
     background-position: 12vw 6vw;
     background-size: 11vw auto;
 }
-.txt_contentStep.extraSmallIcon {
+.txt_contentStep.extraSmallIcon, .extraSmallIcon {
     background-position: 14vw 8vw;
     background-size: 7vw auto;
 }
-.secondIcon {
-    position: absolute;
-    width: 7vw;
-    height: 7vw;
-    margin-left: -31vw;
-    margin-top: 16vw;
-}
-.secondIcon2 {
-    position: absolute;
-    width: 7vw;
-    height: 7vw;
-    margin-left: -31vw;
-    margin-top: 18vw;
-}
-.secondIcon .positionBackground, .secondIcon2 .positionBackground {
-    width: 8vw;
-    height: 8vw;
-    margin-left: 0vw;
-    padding: 0;
-    background-position: center center;
-}
-.secondIcon .contentIconBorder, .secondIcon2 .contentIconBorder {
-    padding: 7vw;
-    background-size: 8vw 8vw;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
+
 .btnPauzeStartSmall {
     background-image: url("../images/general/aw_btnPauzeStart.svg");
 }
@@ -775,6 +782,128 @@ html.android body .manual .scrolllist {
 .txt_contentStep.textonly {
     min-height: 10vw;
     padding-left: 10vw;
+}
+.component {
+    background-color: #000;
+    background-position: 10vw 5vw;
+    background-repeat: no-repeat;
+    background-size: 15vw auto;
+    color: #fff;
+    font-size: 4vw;
+    line-height: 5vw;
+    min-height: 24vw;
+    padding: 0vw 10vw 4vw 10vw;
+}
+.component .txt_componentTitle {
+    background-color: #000;
+    color: #fff;
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+    padding: 6.5vw 5vw 4vw 0vw;
+    text-transform: uppercase;
+}
+.component .item {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto; 
+}
+.component .item img {
+    position: relative;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+.component .item .nr {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    text-align: center;
+    line-height: 6vw;
+    border-radius: 6vw;
+    background: #00a6eb;
+    z-index: 10;
+}
+.phfm_01{
+    left: 42vw;
+    top: 0vw;
+}
+.fm_01{
+    left: 16vw;
+    top: 11vw;
+}
+.fm_02{
+    left: 38vw;
+    top: 20vw;
+}
+.ft_01{
+    left: 16vw;
+    top: 8vw;
+}
+.ft_02{
+    left: 63vw;
+    top: 4vw;
+}
+.ft_03{
+    left: 63vw;
+    top: 16vw;
+}
+.ft_04{
+    left: 60vw;
+    top: 32vw;
+}
+.lfm_01_1{
+    left: 8vw;
+    top: 24vw;
+}
+.lfm_01_2{
+    left: 8vw;
+    top: 74vw;
+}
+.lfm_02{
+    left: 63vw;
+    top: 16vw;
+}
+.lfm_03{
+    left: 63vw;
+    top: 60vw;
+}
+.fwd_01{
+    left: 68vw;
+    top: 18vw;
+}
+.fwd_02{
+    left: 70vw;
+    top: 32vw;
+}
+.fwd_03{
+    left: 72vw;
+    top: 47vw;
+}
+.fwd_04{
+    left: 74vw;
+    top: 63vw;
+}
+.fwd_05{
+    left: 64vw;
+    top: 66vw;
+}
+.fwd_06{
+    left: 64vw;
+    top: 73vw;
+}
+.fwd_07{
+    left: 62vw;
+    top: 52vw;
+}
+.component ol {
+    margin-left: -6.5vw;
+}
+.component ol.alpha {
+    list-style-type: upper-alpha;
+}
+.component li {
+    padding-bottom: 3vw;
 }
 .contentIconBorder {
     border: 0.25vw solid grey;
@@ -826,7 +955,9 @@ html.android body .manual .scrolllist {
 	margin-bottom: 0vw;
 	margin-top: 0vw;
 }
-
+.txt_contentStep p{
+    margin: 0 0 1vw 0;
+}
 /*
  * iPhone 5 vw unit fix
  */

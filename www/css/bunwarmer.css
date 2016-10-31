@@ -26,3 +26,30 @@
 .ss_cookingprograms {
     width: 100%;
 }
+.secondIcon {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    margin-left: -31vw;
+    margin-top: 16vw;
+}
+.secondIcon2 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    margin-left: -31vw;
+    margin-top: 18vw;
+}
+.secondIcon .positionBackground, .secondIcon2 .positionBackground {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 0vw;
+    padding: 0;
+    background-position: center center;
+}
+.secondIcon .contentIconBorder, .secondIcon2 .contentIconBorder {
+    padding: 7vw;
+    background-size: 8vw 8vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

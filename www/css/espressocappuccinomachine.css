@@ -1,0 +1,153 @@
+.header {
+    font-size: 3vw !important;
+    line-height: 4.5vw !important;
+}
+.manual .btnCappuccino {
+    background-image: url("../images/espressocappuccinomachine/aw_btnCappuccino.svg");
+}
+.manual .btnLeftEspresso {
+    background-image: url("../images/espressocappuccinomachine/aw_btnEspresso.svg");
+}
+.manual .btnLeftRistretto {
+    background-image: url("../images/espressocappuccinomachine/aw_btnRistretto.svg");
+}
+.manual .btnRightEspresso {
+    background-image: url("../images/espressocappuccinomachine/aw_btnEspresso.svg");
+}
+.manual .btnRightRistretto {
+    background-image: url("../images/espressocappuccinomachine/aw_btnRistretto.svg");
+}
+.manual .btnClean {
+    background-image: url("../images/espressocappuccinomachine/aw_btnClean.svg");
+}
+.manual .btnFroth {
+    background-image: url("../images/espressocappuccinomachine/aw_btnFroth.svg");
+}
+.txt_btnText.buttonOnOff {
+    height: 142vw;
+}
+.secondIcon {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    margin-left: -31vw;
+    margin-top: 17vw;
+}
+.secondIcon .aw_btnButtonOnOffGreen {
+    min-height: 24vw;
+    background-size: 15vw auto;
+    background-repeat: no-repeat;
+    padding: 7.5vw;
+    margin-left: 10vw;
+}
+.thirdIcon {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    margin-left: -31vw;
+    margin-top: 33vw;
+}
+.thirdIcon .aw_btnButtonOnOffAmber {
+    min-height: 24vw;
+    background-size: 15vw auto;
+    background-repeat: no-repeat;
+    padding: 7.5vw;
+    margin-left: 10vw;
+}
+.txt_contentStep.threeIcons {
+    min-height: 57vw;
+}
+.manual .device {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    margin-left: -21vw;
+    margin-top: 0.5vw;
+    font-size: 3.6vw;
+    line-height: 3.6vw;
+}
+.manual .yellownote {
+    margin-bottom: 2vw;
+
+}
+.manual .btn_cateringFunctions {
+    background-color: #000;
+    background-image: url(../images/espressocappuccinomachine/aw_btnCateringFunctions.svg);
+    background-position: center 5vw;
+    background-repeat: no-repeat;
+    background-size: 15vw auto;
+    border-right: 0.25vw solid #979797;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 3vw;
+    height: 30vw;
+    padding-top: 22vw;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    border-bottom: 0.25vw solid #979797;
+}
+.manual .btn_rinsingCleaningSupplementaryFunctions {
+    background-color: #000;
+    background-image: url(../images/espressocappuccinomachine/aw_btnRinsingCleaningSuppFunctions.svg);
+    background-position: center 4vw;
+    background-repeat: no-repeat;
+    background-size: 11vw auto;
+    border-bottom: 0.25vw solid #979797;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 3vw;
+    height: 30vw;
+    padding-top: 20vw;
+    padding-bottom: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+}
+.manual .btn_componentRemovalAndDisassembly {
+    background-color: #000;
+    background-image: url(../images/espressocappuccinomachine/aw_btnComponentRemovalAndDisassembly.svg);
+    background-position: center 3.5vw;
+    background-repeat: no-repeat;
+    background-size: 15vw auto;
+    border-right: 0.25vw solid #979797;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 3vw;
+    height: 30vw;
+    padding-top: 20vw;
+    padding-bottom: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    border-bottom: 0.25vw solid #979797;
+}
+.aw_btnButtonEspressoLeft {
+    background-image: url("../images/espressocappuccinomachine/aw_btnEspresso.svg");
+}
+.aw_btnButtonCappucino {
+    background-image: url("../images/espressocappuccinomachine/aw_btnCappuccino.svg");
+}
+.aw_btnButtonRistrettoLeft {
+    background-image: url("../images/espressocappuccinomachine/aw_btnRistretto.svg");
+}
+
+.aw_btnButtonFroth {
+    background-image: url("../images/espressocappuccinomachine/aw_btnFroth.svg");
+    /*background-position: 10vw 6vw !important;*/
+}
+.aw_btnButtonClean {
+    background-image: url("../images/espressocappuccinomachine/aw_btnClean.svg");
+}
+
+/*.manual .btn_basicOperations, .manual .btn_quickReferenceGuide {
+   float: right;
+   border-right: none;
+}
+.manual .btn_advancedProgramming, .manual .btn_cookingPrograms {
+   float: left;
+   border-right: 0.25vw solid #979797;
+}*/

@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/espressocappuccinomachine.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='ecm.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Espresso/Cappuccino Machine
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">BASIC OPERATIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='ecm_basicoperations.html';">HOW TO PREPARE THE<br>ESPRESSO/CAPPUCCINO<br>MACHINE FOR OPERATION</div>
+                    <div class="submenu_item active" onclick="location.href='ecm_basicoperations_Standby.html';">TRANSITION BETWEEN<br>STANDBY ON &amp; STANDBY OFF</div>
+                    
+                    <div class="txt_contentTitle">TRANSITION BETWEEN<br>STANDBY ON &amp; STANDBY OFF</div>
+                    <div class="yellownote">
+                        <p>ONCE PRIMED, THE UNIT CAN BE TRANSITIONED BETWEEN STANDBY ON AND STANDBY OFF WITHOUT THE NEED TO RE-PRIME WHEN RETURNING TO STANDBY ON.</p>
+                    </div>
+                    <div class="yellownote">
+                        <p>WHEN THE UNIT IS MOVED FROM STANDBY OFF TO STANDBY ON, SOME TIME WILL BE NEEDED TO ALLOW THE HEATERS TO COME UP TO TEMPERATURE.</p>
+                    </div>
+                    <div class="yellownote">
+                        <p>WHEN THE UNIT IS IN STANDBY ON, IF NOT OPERATED FOR 30 MINUTES, IT WILL TRANSITION TO STANDBY OFF.</p>
+                    </div>
+
+
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue">
+                    <u>OBSERVE</u> the ON/OFF light ring is Blue, indicating the unit is in STANDBY OFF mode.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue darkgrey">
+                    <u>PRESS</u> the ON/OFF button once.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen">
+                    <u>OBSERVE</u> the ON/OFF light ring is Green, indicating the unit is in STANDBY ON mode.
+                    </div>
+                    <!-- <div class="txt_contentStep aw_btnButtonOnOffBlue darkgrey">
+                        <u>OBSERVE</u> the ON/OFF light ring is Blue, indicating the unit is receiving power from the aircraft and is in STANDBY OFF mode.
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">FROTH MODULE AND POD HOLDERS</div>
+                        <ol>
+                            <li><u>REMOVE</u> the Froth Module and both Pod Holders.</li>
+                            <li><u>EMPTY</u> both Pod Holders and <u>RE-INSTALL</u> them in the Espresso/Cappuccino Machine.</li>
+                        </ol>
+                    </div>
+                    <div class="txt_contentStep darkgrey">
+                        <div class="device">RECEIVING CUPS</div>
+                        <u>PLACE</u> receiving cups, or the Froth Module Reservoir (without the lid) turned sideways, into the brew cavities to collect water from the brew heads.
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">BREW HANDLE</div>
+                        <u>PLACE</u> the Brew Handle in the ‘down’ position. The Espresso/Cappuccino Machine will not prime if the Brew Handle is not down.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue darkgrey">
+                        <u>PRESS</u> the ON/OFF button once.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen">
+                        <u>OBSERVE</u> the ON/OFF light ring is Green and blinking.<br>
+                        <u>OBSERVE</u> the pumps turning on and off.<br>
+                        Note: Little to no water may exit the Brew Heads, but any water should be collected from the Brew Heads and disposed of in the galley sink.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen darkgrey">
+                        <u>OBSERVE:</u>
+                        <ol>
+                            <li>Pumps will stop priming.</li>
+                            <li>After a successful prime, the ON/OFF light ring will turn solid Green, indicating STANDBY ON mode.</li>
+                        </ol>
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">RECEIVING CUPS</div>
+                        <u>EMPTY</u> water collected in receiving cups or Froth Module Reservoir by disposing of in galley sink.<br>
+                        <br>
+                        NOTE: The platen drip tray is not intended for disposal of large volumes of liquid. Do not pour liquids into the drip tray.
+                    </div> -->
+                    <!-- <div class="txt_contentStep aw_btnButtonOnOffBlue"><u>PRESS</u> the ON/OFF button once.</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen darkgrey"><u>OBSERVE</u><ol><li>All buttons light up during the initialization process</li><li>After a successful initialization, the light ring will turn Green indicating STANDBY ON mode</li><li>Make sure that the door is closed and the primary and secondary latch are locked correctly.</li></ol></div>
+                    <div class="screenshot ss_cooking darkgrey"></div> -->
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>

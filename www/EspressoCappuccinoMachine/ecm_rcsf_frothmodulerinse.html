@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Security-Policy" content="default-src gap://ready 'self' 'unsafe-inline' data: file://* * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title></title>
+    <script type="text/javascript" src="../cordova.js" onload="javascript:window.isCordovaApp = true;"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        function onDeviceReady() {
+
+            console.log('...IN DEVICEREADY...');
+
+            init();
+
+            // load debug html/script into a new div
+            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
+
+        }
+        //
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/espressocappuccinomachine.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="screen manual">
+            <div class="header" onclick="location.href='ecm.html';">
+                <img src="../images/general/btn_back.svg" alt="" class="btn_back">ESSENCE<sup>&#174;</sup> Espresso/Cappuccino Machine
+            </div>
+            <div class="separator"></div>
+            <div class="scrolllist overthrow">
+            	<ul>
+                    <div class="title_blue">RINSING / CLEANING / SUPPLEMENTARY FUNCTIONS</div>
+                    <div class="separator"></div>
+                    <div class="submenu_item" onclick="location.href='ecm_rcsf.html';">FREEZE PROTECTION PROCEDURE</div>
+                    <div class="submenu_item" onclick="location.href='ecm_rcsf_podholderrinse.html';">POD HOLDER RINSE</div>
+                    <div class="submenu_item active" onclick="location.href='ecm_rcsf_frothmodulerinse.html';">FROTH MODULE RINSE</div>
+                    <div class="submenu_item" onclick="location.href='ecm_rcsf_frothwandrinse.html';">FROTH WAND RINSE</div>
+                    <div class="submenu_item" onclick="location.href='ecm_rcsf_podholdercleaning.html';">POD HOLDER CLEANING</div>
+                    <div class="submenu_item" onclick="location.href='ecm_rcsf_frothmodulecleaning.html';">FROTH MODULE CLEANING</div>
+                    <div class="submenu_item" onclick="location.href='ecm_rcsf_frothwandcleaning.html';">FROTH WAND CLEANING</div>
+                    
+                    <div class="txt_contentTitle">FROTH MODULE RINSE</div>
+                    <div class="txt_contentNote"><strong>This operation can be completed at any time to ensure best performance.</strong><br>
+                    Cleanliness of the Froth Module is important to prevent discharging spoiled milk residue into a drink and to ensure good quality frothed milk. Poor quality frothed milk may be an indication that the Froth Module needs to be rinsed. If the results of the rinsing process are unsatisfactory, the Froth Module should be removed, disassembled, and thoroughly washed per the instructions in Section 5F.</div>
+                    <div class="txt_contentStep aw_btnButtonOnOffGreen ">
+                        <u>OBSERVE</u> the ON/OFF light ring is <strong>Green</strong>, indicating the unit is in the STANDBY ON mode, and all indicators are steady ON.
+                    </div>
+                    <div class="txt_contentStep darkgrey">
+                        <div class="device">FROTH MODULE</div>
+                            <ol>
+                                <li><u>EMPTY</u> all milk from the Froth Module and rinse all surfaces of the Froth Module with clean water. If needed, wash the Froth Module surfaces with soap and water, then rinse.</li>
+                                <li><u>FILL</u> the Froth Module with clean fresh water* to the “MAX” level shown on the Froth Module Reservoir.</li>
+                            </ol>
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">RECEIVING CUP</div>
+                        <u>PLACE</u> an empty cup in the LEFT receiving cup space.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonFroth smallIcon darkgrey">
+                    <div class="contentIconBorder"></div>
+                        <u>OBSERVE</u> the CLEAN button will be lit. <u>PRESS</u> and <u>HOLD</u> the CLEAN button until the Espresso/Cappuccino Machine pumps turn on (approximately three seconds).
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">RECEIVING CUP</div>
+                        <u>EMPTY</u> the receiving cup. Any water collected should be disposed of in the galley sink.<br>
+                        <br>
+                        <strong>NOTE: The platen drip tray is not intended for disposal of large volumes of liquid. Do not pour liquids into the drip tray.</strong>
+                    </div>
+                    <div class="txt_contentNote">
+                    * Instead of water to rinse the Froth Module, a cleaning solution may be used to clean the Froth Module. The cleaning solution can include any of the following:
+                    <ol>
+                        <li>500mL cold water with 5mL antibacterial dishwashing liquid.</li>
+                        <li>500mL cold water with 15mL Full Circle® milk cleaning product.</li>
+                        <li>500mL cold water with 30mL Rinza® milk cleaning product.</li>
+                        <li>Other milk cleaning solutions per cleaning product manufacturer instructions.</li>
+                    </ol>
+
+                    </div>
+                    <!-- <div class="txt_contentStep ">
+                        <div class="device">BREW HANDLE</div>
+                        <u>PLACE</u> the Brew Handle in the ‘down’ position. The Espresso/Cappuccino Machine will not allow activation of the Freeze Protection procedure if the Brew Handle is not down.
+                    </div>
+                    
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue darkgrey">
+                        <ol>
+                            <li><u>OBSERVE</u> the ON/OFF light ring is Blue and blinking.</li>
+                            <li><u>OBSERVE</u> the pumps turning on and off, with water exiting the Brew Heads. The water flow will slow, until it nearly or completely stops.</li>
+                        </ol>
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonOnOffBlue ">
+                        <ol>
+                            <li><u>OBSERVE</u> the pumps turn off, and the ON/OFF light ring turns steady <strong>Blue</strong>.</li>
+                            <li><u>EMPTY</u> the receiving cups or Froth Module Reservoir. Any water collected should be disposed of in the galley sink.</li>
+                        </ol>
+                        <br>
+                        <strong>NOTE: The platen drip tray is not intended for disposal of large volumes of liquid. Do not pour liquids into the drip tray.</strong>
+                    </div> -->
+                    <!-- <div class="txt_contentStep">
+                        <div class="device">BREW HANDLE AND POD HOLDERS</div>
+                            <u>RAISE</u> the Brew Handle and <u>REMOVE</u> the Pod Holders from the Espresso/Cappuccino Machine. Discard any used espresso pods.
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">POD HOLDER</div>
+                            <u>PLACE</u> an ESE pod into either or both Pod Holder(s) and press down firmly on each pod. <u>INSERT</u> the Pod Holder(s) <strong>fully</strong> into the Espresso/Cappuccino Machine. <u>PUSH</u> until Pod Holder(s) &ldquo;click&rdquo; securely into place.
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">RECEIVING CUP</div>
+                            <u>PLACE</u> a receiving cup into the left space for a left brew and/or into the right space for a right brew. The receiving cups are NOT secured by the Brew Handle.
+                    </div>
+                    <div class="txt_contentStep">
+                        <div class="device">BREW HANDLE</div>
+                            <u>PLACE</u> the Brew Handle in the ‘down’ position. The Espresso/Cappuccino Machine will not operate if the Brew Handle is not down.
+                    </div>
+                    <div class="txt_contentStep aw_btnButtonEspressoLeft ecm_rcsf.">
+                    <div class="secondIcon"><div class="aw_btnButtonOnOffGreen"></div></div>
+                        <u>OBSERVE</u> the ON/OFF light ring is Green, indicating the unit is in the STANDBY ON mode, and indicators for all available brew options are steady on.<br><br>
+                    </div> -->
+                    <div class="separator"></div>
+                </ul>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>
