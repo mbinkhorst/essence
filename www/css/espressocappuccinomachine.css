@@ -142,7 +142,88 @@
 .aw_btnButtonClean {
     background-image: url("../images/espressocappuccinomachine/aw_btnClean.svg");
 }
-
+.component .item .nr {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    text-align: center;
+    line-height: 6vw;
+    border-radius: 6vw;
+    background: #00a6eb;
+    z-index: 10;
+}
+.phfm_01{
+    left: 42vw;
+    top: 0vw;
+}
+.fm_01{
+    left: 16vw;
+    top: 11vw;
+}
+.fm_02{
+    left: 38vw;
+    top: 20vw;
+}
+.ft_01{
+    left: 16vw;
+    top: 8vw;
+}
+.ft_02{
+    left: 63vw;
+    top: 4vw;
+}
+.ft_03{
+    left: 63vw;
+    top: 16vw;
+}
+.ft_04{
+    left: 60vw;
+    top: 32vw;
+}
+.lfm_01_1{
+    left: 8vw;
+    top: 24vw;
+}
+.lfm_01_2{
+    left: 8vw;
+    top: 74vw;
+}
+.lfm_02{
+    left: 63vw;
+    top: 16vw;
+}
+.lfm_03{
+    left: 63vw;
+    top: 60vw;
+}
+.fwd_01{
+    left: 58vw;
+    top: 18vw;
+}
+.fwd_02{
+    left: 60vw;
+    top: 32vw;
+}
+.fwd_03{
+    left: 62vw;
+    top: 47vw;
+}
+.fwd_04{
+    left: 64vw;
+    top: 63vw;
+}
+.fwd_05{
+    left: 54vw;
+    top: 66vw;
+}
+.fwd_06{
+    left: 54vw;
+    top: 73vw;
+}
+.fwd_07{
+    left: 52vw;
+    top: 52vw;
+}
 /*.manual .btn_basicOperations, .manual .btn_quickReferenceGuide {
    float: right;
    border-right: none;
