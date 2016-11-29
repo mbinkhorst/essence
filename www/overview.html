@@ -16,9 +16,9 @@
             console.log('...IN DEVICEREADY...');
 
             init();
+		
+			$('.version').text(AppVersion.version+'('+AppVersion.build+')');
 
-            // load debug html/script into a new div
-            // if (window.isCordovaApp) $('<div />', { id: 'dp' }).appendTo('body').load("debug.html");
 
         }
         //
@@ -30,7 +30,7 @@
     <div class="screen overview">
         <div class="header">
             <img src="images/general/aw_cube.svg" alt="" class="icon_cubeBlue"><br>
-            Essence<sup>&#174;</sup> Inserts Collection<br><span class="subtext">by B/E AEROSPACE</span>
+            Essence<sup>&#174;</sup> Inserts Collection<br><span class="subtext">by B/E AEROSPACE</span><div class="version"> version</div>
         </div>
         <div class="title_blue">Product overview</div>
         <div class="subtitle">Select your product</div>
@@ -38,7 +38,6 @@
         <div class="productlist overthrow">
             <ul>
                 <li onclick="location.href='Steamoven/steamoven.html';">STEAM OVEN</li>
-                <!--<li onclick="javascript:top.frames.location.reload();">CONVECTION OVEN</li>-->
                 <li onclick="location.href='Convectionoven/convectionoven.html';">CONVECTION OVEN</li>
                 <li onclick="location.href='Bunwarmer/bunwarmer.html';">BUN WARMER</li>
                 <li onclick="location.href='EspressoCappuccinoMachine/ecm.html';">ESPRESSO/CAPPUCCINO MACHINE</li>

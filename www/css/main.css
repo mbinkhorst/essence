@@ -943,6 +943,7 @@ html {
 }
 
 .version {
+	font-size: 2vw;
 	position:absolute;
 	z-index:99999;
 	color:#fff;
