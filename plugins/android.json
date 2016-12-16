@@ -7,28 +7,28 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.michelb.beaerospace"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.michelb.beaerospace"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.michelb.beaerospace"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.michelb.beaerospace"
-        },
-        "cordova-plugin-device": {
+        "cordova-plugin-appversion": {
             "PACKAGE_NAME": "com.michelb.beaerospace"
         },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.michelb.beaerospace"
         },
-        "cordova-plugin-appversion": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.michelb.beaerospace"
+        },
+        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.michelb.beaerospace"
         },
         "cordova-plugin-ios-no-export-compliance": {
+            "PACKAGE_NAME": "com.michelb.beaerospace"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.michelb.beaerospace"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.michelb.beaerospace"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.michelb.beaerospace"
         }
     },
