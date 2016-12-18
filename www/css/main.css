@@ -617,7 +617,7 @@ html.android body .manual .scrolllist {
     font-size: 3.8vw;
     left: 42vw;
     position: absolute;
-    top: 35vw;
+    top: 33vw; /* was 35 */
 }
 .txt_btnTitle.hmi {
     top: -14vw;

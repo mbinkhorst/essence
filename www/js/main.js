@@ -73,6 +73,104 @@ $(document).ready(function () {
         //onDeviceReady();
     }
 
+	var current_path = window.location.pathname.split('/').pop();
+	console.log('Path = ' + current_path);
+
+	buttonsArray = [
+	'bunwarmer_buttons_Network.html',
+	'convectionoven_buttons_Clock.html',
+	'convectionoven_buttons_Down.html',
+	'convectionoven_buttons_HmiDisplay.html',
+	'convectionoven_buttons_Network.html',
+	'convectionoven_buttons_NoWater.html',
+	'convectionoven_buttons_StartPause.html',
+	'convectionoven_buttons_Stop.html',
+	'convectionoven_buttons_Up.html',
+	'convectionoven_buttons.html',
+	'ecm_buttons_Cappuccino.html',
+	'ecm_buttons_Clean.html',
+	'ecm_buttons_Froth.html',
+	'ecm_buttons_LeftEspresso.html',
+	'ecm_buttons_LeftRistretto.html',
+	'ecm_buttons_Network.html',
+	'ecm_buttons_NoWater.html',
+	'ecm_buttons_RightEspresso.html',
+	'ecm_buttons_RightRistretto.html',
+	'ecm_buttons.html',
+	'scstrimodechiller_buttons_HmiDisplay.html',
+	'scstrimodechiller_buttons_Network.html',
+	'scstrimodechiller_buttons.html',
+	'steamoven_buttons_Clock.html',
+	'steamoven_buttons_Down.html',
+	'steamoven_buttons_HmiDisplay.html',
+	'steamoven_buttons_Network.html',
+	'steamoven_buttons_NoWater.html',
+	'steamoven_buttons_StartPause.html',
+	'steamoven_buttons_Stop.html',
+	'steamoven_buttons_Up.html',
+	'steamoven_buttons.html',
+	'trimodechiller_buttons_HmiDisplay.html',
+	'trimodechiller_buttons_Network.html',
+	'trimodechiller_buttons.html'
+	];
+
+// -------- low resolution changes
+	window.isiPad = navigator.platform;
+	maxheight = screen.height;
+	//if (window.isiPad == 'iPad') {
+	
+	// tested for iPhone4/S(9.3) + iPhone emulation on iPad(10.2)
+	if (maxheight < 500 || window.isiPad == 'iPad') {
+		console.log('-= iPhone4/S or iPhone emulation on iPad =-');
+		
+		// index.html
+		if (current_path == 'index.html') {
+			console.log('adjusting layout');
+			$(".aw_titlescreen").attr("src","images/general/aw_title-small.jpg");
+			$('.aw_titlescreen').css('height','880px');
+			$('.aw_titlescreen').css('width','100%');
+		}
+	
+		if (current_path != 'index.html' && current_path != 'overview.html') {
+			// pad the scrolllist
+			//$('#scroll-ul').append('<li>&nbsp;</li><li>&nbsp;</li>');
+			// pad the content
+			$('#stub').html('&nbsp;<br><br><br><br><br>');
+			
+			//$('.title_blue').css('font-size','4vw');
+			$('.title_blue').remove();
+			$('.footer').remove();
+		}
+		
+		if (current_path == 'overview.html') {
+			// remove header to save space, removes branding, but who will see this version? iPhone 4?
+			$('.header').remove();
+		}
+		
+		if (current_path == 'scstrimodechiller_videos.html' || current_path == 'bunwarmer_videos.html') {
+			$('.footer_videos_dooroperations').css('height','68.5vw');
+		}
+		
+		if ( current_path.includes("dooroperations") ) {
+			// remove footer to save space
+			$('.footer_dooroperations').remove();
+		}
+		
+		if (buttonsArray.indexOf(current_path) > -1) {
+			// if in array then 87vw
+			$('.txt_btnText').css('height','87vw');
+		}
+		
+		if ( current_path == 'bunwarmer_buttons.html' || current_path == 'trimodechiller_buttons.html' || current_path == 'scstrimodechiller_buttons.html' ) {
+			// exceptions to button pages in array
+			$('.scrolllist').css('height','125vw');
+		}
+		
+		
+	}
+	
+// --------/ low resolution changes		
+
 });
 
 
@@ -101,7 +199,7 @@ function getPlatform() {
 
     window.isAndroid = false;
     window.isiOS = false;
-
+	
     // get the platform for later use Android / iOS
     window.platform = device.platform;
 
