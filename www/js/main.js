@@ -119,6 +119,22 @@ $(document).ready(function () {
 	maxheight = screen.height;
 	//if (window.isiPad == 'iPad') {
 	
+	if (maxheight < 570 && maxheight > 500) {
+		console.log('-= iPhone5 =-');
+		// index.html
+		if (current_path == 'index.html') {
+			console.log('adjusting layout');
+			$('.aw_titlescreen').css('height','1170px');
+			$('.aw_titlescreen').css('width','100%');
+		}
+	
+		if (current_path == 'trimodechiller_videos.html' || current_path == 'scstrimodechiller_videos.html' || current_path == 'bunwarmer_videos.html' || current_path == 'convectionoven_videos.html') {
+			$('.footer_videos_dooroperations').css('height','82.5vw');
+		}
+		
+	}
+
+//------------------------------	
 	// tested for iPhone4/S(9.3) + iPhone emulation on iPad(10.2)
 	if (maxheight < 500 || window.isiPad == 'iPad') {
 		console.log('-= iPhone4/S or iPhone emulation on iPad =-');
@@ -147,7 +163,7 @@ $(document).ready(function () {
 			$('.header').remove();
 		}
 		
-		if (current_path == 'scstrimodechiller_videos.html' || current_path == 'bunwarmer_videos.html') {
+		if (current_path == 'scstrimodechiller_videos.html' || current_path == 'trimodechiller_videos.html' || current_path == 'bunwarmer_videos.html' || current_path == 'convectionoven_videos.html'	) {
 			$('.footer_videos_dooroperations').css('height','68.5vw');
 		}
 		
@@ -171,6 +187,25 @@ $(document).ready(function () {
 	
 // --------/ low resolution changes		
 
+		// exceptions for certain pages on all devices
+		if (current_path.indexOf('_OnOff') > -1) {
+			// change separator because of stupid overlap
+			$('.separator').css('overflow','visible');
+		}
+		
+		if (current_path == 'bunwarmer_buttons.html') {
+			$('.footer').css('height','30vh');
+		}
+		
+		if (current_path == 'trimodeschiller_buttons.html') {
+			$('.footer').css('height','52vh');
+		}
+		
+		if (current_path == 'bunwarmer_basicoperations.html') {
+			$('#stub').html('&nbsp;<br><br><br>');
+		}
+
+		
 });
 
 

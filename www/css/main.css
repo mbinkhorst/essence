@@ -432,7 +432,7 @@ html.android body .manual .scrolllist {
     text-align: center;
     text-transform: uppercase;
     width: 50%;
-	border-bottom: 0.25vw solid #979797;
+	border-bottom: 0.28vw solid #979797;
 }
 .manual .btn_advancedProgramming {
     background-color: #000;
@@ -458,7 +458,7 @@ html.android body .manual .scrolllist {
     background-repeat: no-repeat;
     background-size: 13vw auto;
     border-right: 0.25vw solid #979797;
-    border-bottom: 0.25vw solid #979797;
+    border-bottom: 0.28vw solid #979797;
     color: #fff;
 	cursor: pointer;
     float: left;
